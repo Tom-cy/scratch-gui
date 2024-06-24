@@ -59,7 +59,7 @@
     "keymirror": "^0.1.1",
     "koala-blocks": "^1.0.5",
     "koala-l10n": "^1.0.5",
-    "koala-vm": "^1.0.5",
+    "koala-vm": "^1.0.6",
     "lodash.bindall": "^4.4.0",
     "lodash.debounce": "^4.0.8",
     "lodash.defaultsdeep": "^4.6.1",
