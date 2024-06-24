@@ -1,5 +1,21 @@
 [
     {
+        "name": "Koala-a",
+        "md5ext": "4c080cb6264549cf67a04bcf0f68c2e4.png",
+        "classURL": "http://qiniu1.chen1995.com/internalapi/asset/dashboard_img.jpg",
+        "type": "costume",
+        "tags": [
+            "people",
+            "person",
+            "drawing"
+        ],
+        "info": [
+            31,
+            100,
+            1
+        ]
+    },
+    {
         "name": "Abby-a",
         "tags": [
             "people",

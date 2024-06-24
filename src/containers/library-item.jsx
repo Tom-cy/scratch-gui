@@ -93,6 +93,7 @@ class LibraryItem extends React.PureComponent {
     }
     curIconMd5 () {
         const iconMd5Prop = this.props.iconMd5;
+
         if (this.props.icons &&
             this.state.isRotatingIcon &&
             this.state.iconIndex < this.props.icons.length) {
@@ -105,9 +106,16 @@ class LibraryItem extends React.PureComponent {
     }
     render () {
         const iconMd5 = this.curIconMd5();
-        const iconURL = iconMd5 ?
-            `https://cdn.assets.scratch.mit.edu/internalapi/asset/${iconMd5}/get/` :
+
+        const iconURL = iconMd5 ? (this.props.classURL ||
+            `https://cdn.assets.scratch.mit.edu/internalapi/asset/${iconMd5}/get/`) :
             this.props.iconRawURL;
+        // const iconURL = iconMd5 ? (this.props.classURL ||
+        //     `https://hillary-asset.oss-cn-shanghai.aliyuncs.com/internalapi/asset/${iconMd5}`) :
+        //     this.props.iconRawURL;
+        // const iconURL = iconMd5 ?
+        //     `https://cdn.assets.scratch.mit.edu/internalapi/asset/${iconMd5}/get/` :
+        //     this.props.iconRawURL;
         return (
             <LibraryItemComponent
                 bluetoothRequired={this.props.bluetoothRequired}
