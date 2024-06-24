@@ -14,11 +14,12 @@ $ui-black-transparent: hsla(0, 0%, 0%, 0.15); /* 15% transparent version of blac
 $text-primary: hsla(225, 15%, 40%, 1); /* #575E75 */
 $text-primary-transparent: hsla(225, 15%, 40%, 0.75);
 
-$motion-primary: hsla(215, 100%, 65%, 1); /* #4C97FF */
 $motion-tertiary: hsla(215, 60%, 50%, 1); /* #3373CC */
 
+$looks-secondary: #FFA726; /* #855CD6 主题色 */
+$motion-primary: #29B6F6; /* #4C97FF  辅助色*/
+$pen-primary: #66BB6A; /* #0FBD8C 点缀色 */
 
-$looks-secondary: hsla(260, 60%, 60%, 1); /* #855CD6 主题色 */
 $looks-transparent: hsla(260, 60%, 60%, 0.35); /* 35% transparent version of looks-tertiary */
 $looks-light-transparent: hsla(260, 60%, 60%, 0.15); /* 15% transparent version of looks-tertiary */
 $looks-secondary-dark: 	hsla(260, 42%, 51%, 1); /* #714EB6 */
@@ -33,7 +34,6 @@ $control-primary: hsla(38, 100%, 55%, 1); /* #FFAB19 */
 
 $data-primary: hsla(30, 100%, 55%, 1); /* #FF8C1A */
 
-$pen-primary: hsla(163, 85%, 40%, 1); /* #0FBD8C */
 $pen-transparent: hsla(163, 85%, 40%, 0.25); /* #0FBD8C */
 $pen-tertiary: hsla(163, 86%, 30%, 1); /* #0B8E69 */
 

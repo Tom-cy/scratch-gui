@@ -148,7 +148,7 @@ const buildConfig = baseConfig.clone()
     .addPlugin(new HtmlWebpackPlugin({
         chunks: ['gui'],
         template: 'src/playground/index.ejs',
-        title: '考拉编程'
+        title: '考拉编程 - AI智能编程'
     }))
     .addPlugin(new HtmlWebpackPlugin({
         chunks: ['blocksonly'],

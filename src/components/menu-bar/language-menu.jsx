@@ -59,8 +59,8 @@ class LanguageMenu extends React.PureComponent {
                     />
                     <span className={styles.submenuLabel}>
                         <FormattedMessage
-                            defaultMessage="语言菜单"
-                            description="语言类型菜单"
+                            defaultMessage="Language"
+                            description="Language Mode"
                             id="gui.menuBar.language"
                         />
                     </span>
