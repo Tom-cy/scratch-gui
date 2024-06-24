@@ -5,7 +5,7 @@ import makeToolboxXML from '../lib/make-toolbox-xml';
 import PropTypes from 'prop-types';
 import React from 'react';
 import VMScratchBlocks from '../lib/blocks';
-import VM from 'scratch-vm';
+import VM from 'koala-vm';
 
 import log from '../lib/log.js';
 import Prompt from './prompt.jsx';
@@ -417,8 +417,8 @@ class Blocks extends React.Component {
     }
     handleMonitorsUpdate (monitors) {
         // Update the checkboxes of the relevant monitors.
-        // TODO: What about monitors that have fields? See todo in scratch-vm blocks.js changeBlock:
-        // https://github.com/LLK/scratch-vm/blob/2373f9483edaf705f11d62662f7bb2a57fbb5e28/src/engine/blocks.js#L569-L576
+        // TODO: What about monitors that have fields? See todo in koala-vm blocks.js changeBlock:
+        // https://github.com/LLK/koala-vm/blob/2373f9483edaf705f11d62662f7bb2a57fbb5e28/src/engine/blocks.js#L569-L576
         const flyout = this.workspace.getFlyout();
         for (const monitor of monitors.values()) {
             const blockId = monitor.get('id');
@@ -460,7 +460,7 @@ class Blocks extends React.Component {
             }
         };
 
-        // scratch-blocks implements a menu or custom field as a special kind of block ("shadow" block)
+        // koala-blocks implements a menu or custom field as a special kind of block ("shadow" block)
         // these actually define blocks and MUST run regardless of the UI state
         defineBlocks(
             Object.getOwnPropertyNames(categoryInfo.customFieldTypes)
@@ -517,7 +517,7 @@ class Blocks extends React.Component {
     /*
      * Pass along information about proposed name and variable options (scope and isCloud)
      * and additional potentially conflicting variable names from the VM
-     * to the variable validation prompt callback used in scratch-blocks.
+     * to the variable validation prompt callback used in koala-blocks.
      */
     handlePromptCallback (input, variableOptions) {
         this.state.prompt.callback(

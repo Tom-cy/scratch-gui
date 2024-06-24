@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import bindAll from 'lodash.bindall';
 import {defineMessages, intlShape, injectIntl} from 'react-intl';
-import VM from 'scratch-vm';
+import VM from 'koala-vm';
 
 import AssetPanel from '../components/asset-panel/asset-panel.jsx';
 import PaintEditorWrapper from './paint-editor-wrapper.jsx';
@@ -119,7 +119,7 @@ class CostumeTab extends React.Component {
             const oldTarget = this.props.sprites[editingTarget] ?
                 this.props.sprites[editingTarget] : this.props.stage;
             // @todo: Find and switch to the index of the costume that is new. This is blocked by
-            // https://github.com/LLK/scratch-vm/issues/967
+            // https://github.com/LLK/koala-vm/issues/967
             // Right now, you can land on the wrong costume if a costume changing script is running.
             if (oldTarget.costumeCount !== target.costumeCount) {
                 this.setState({selectedCostumeIndex: target.currentCostume});

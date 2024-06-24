@@ -16,7 +16,7 @@ class DragRecognizer {
     constructor ({
         onDrag = (() => {}),
         onDragEnd = (() => {}),
-        touchDragAngle = 70, // Angle and distance thresholds are the same as scratch-blocks
+        touchDragAngle = 70, // Angle and distance thresholds are the same as koala-blocks
         distanceThreshold = 3
     }) {
         this._onDrag = onDrag;
@@ -44,7 +44,7 @@ class DragRecognizer {
     gestureInProgress () {
         return this._gestureState !== DragRecognizer.STATE_UNIDENTIFIED;
     }
-    
+
     reset () {
         this._unbindListeners();
         this._initialOffset = null;

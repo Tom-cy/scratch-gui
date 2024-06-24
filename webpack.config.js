@@ -94,22 +94,22 @@ const baseConfig = new ScratchWebpackConfigBuilder(
     .addPlugin(new CopyWebpackPlugin({
         patterns: [
             {
-                from: 'node_modules/scratch-blocks/media',
+                from: 'node_modules/koala-blocks/media',
                 to: 'static/blocks-media/default'
             },
             {
-                from: 'node_modules/scratch-blocks/media',
+                from: 'node_modules/koala-blocks/media',
                 to: 'static/blocks-media/high-contrast'
             },
             {
                 // overwrite some of the default block media with high-contrast versions
-                // this entry must come after copying scratch-blocks/media into the high-contrast directory
+                // this entry must come after copying koala-blocks/media into the high-contrast directory
                 from: 'src/lib/themes/high-contrast/blocks-media',
                 to: 'static/blocks-media/high-contrast',
                 force: true
             },
             {
-                context: 'node_modules/scratch-vm/dist/web',
+                context: 'node_modules/koala-vm/dist/web',
                 from: 'extension-worker.{js,js.map}',
                 noErrorOnMissing: true
             }
