@@ -62,8 +62,8 @@ const ThemeMenu = ({
                 />
                 <span className={styles.submenuLabel}>
                     <FormattedMessage
-                        defaultMessage="Color Mode"
-                        description="Color mode sub-menu"
+                        defaultMessage="颜色菜单"
+                        description="颜色类型菜单"
                         id="gui.menuBar.colorMode"
                     />
                 </span>

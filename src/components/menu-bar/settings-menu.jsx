@@ -33,8 +33,8 @@ const SettingsMenu = ({
         />
         <span className={styles.dropdownLabel}>
             <FormattedMessage
-                defaultMessage="Settings"
-                description="Settings menu"
+                defaultMessage="设置"
+                description="设置中心"
                 id="gui.menuBar.settings"
             />
         </span>
